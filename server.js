@@ -190,5 +190,9 @@ app.delete("/api/students/:id", async (req, res) => {
     res.status(500).json({ message: "Internal server error" });
   }
 });
-
+app.get("/api/test", (req, res) => {
+  res.json({
+    message: "GitHub source code management test successful"
+  });
+});
 startServer();
